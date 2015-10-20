@@ -1,13 +1,106 @@
 .main-background{
 	background: url(images/bikinibottom.png) no-repeat center center fixed;
-    width: 110%;
-    -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	background-color: black;
+	opacity: 0.6;
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
 
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index: -5;
+}
+.main-background-cover{
+	/*background: url(images/bikinibottom.png) no-repeat center center fixed;*/
+	background-color: black;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9;
 }
 
-.top-bar{
-	color: red;
+.main-title{
+	font-size: 4em;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    margin: 250px 0px 200px;
+}
+
+.party-container{
+	margin: 150px 0% 0px;
+	background-color: rgba(0,0,0,0.7);
+	/*height: 120px; */
+	color: white;
+	font-family: "Arial";
+	padding: 0px 80px 80px;
+
+}
+.party-container .party-header{
+	font-size: 1.5em;
+	text-align: center;
+	color: #bbb;
+	padding: 5px;
+}
+.party-container .party-title{
+	font-size: 2.5em;
+	text-align: left;
+}
+.party-container .party-date{
+	color: #ddd;
+	text-align: left;
+	padding-bottom: 25px;
+}
+
+.party-container .party-description{
+	color: #eee;
+	text-align: left;
+	font-size: 1.4em;
+}
+
+
+/*----------------------Attendee Functionality -------------------*/
+.attendees-container{
+	margin: 150px 18% 50px;
+	background-color: rgba(0,0,0,0.7);
+	/*height: 120px; */
+	color: white;
+	font-family: "Arial";
+	padding: 0px 50px 20px;
+	float: left;
+	width: 100%;
+}
+
+.party-attendee{
+	padding: 25px;
+}
+
+.party-attendee .image{
+	width: 50%;
+	min-height: 150px;
+	float: left;
+	background: url(images/patrick.jpg);
+	background-size: 100%;
+	display: inline-block;
+}
+.party-attendee .metadata{
+	width: 40%;
+	float: left;
+	padding-left: 15px;
+	display: inline-block;
+}
+
+.party-attendee .metadata .name{
+	font-size: 1.5em;
+
 }
