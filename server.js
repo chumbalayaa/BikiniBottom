@@ -49,7 +49,7 @@ app.use(function(req,res,next) {
   req.OPENSHIFT_PORT = port;
   req.OPENSHIFT_IP = ip;
   next();
-})
+});
 
 //Routing
 
