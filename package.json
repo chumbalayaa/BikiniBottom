@@ -27,6 +27,7 @@
   "dependencies": {
     "express": ">= 4.0.0",
     "jade": "*",
+    "ejs": "*",
     "consolidate": "*",
     "body-parser": "^1.5.2",
     "errorhandler": "^1.1.1",

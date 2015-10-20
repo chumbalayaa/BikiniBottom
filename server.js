@@ -11,11 +11,10 @@ var logger = require("morgan");
 var fs = require("fs");
 
 //routing variables
-var index = require('./routes/index');
+var index = require('./routes/index').router;
 
 //Add variables to app
-//app.set('view engine', 'jade');
-//app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));

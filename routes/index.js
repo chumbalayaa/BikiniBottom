@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res) {
-	res.render('index.html', {
-		message: ''
-	});
+	res.send("Sup bitches");
 });
 
-module.exports = router;
+module.exports = {
+  router: router
+};
