@@ -2,9 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res) {
-	res.send("Sup bitches");
+  console.log("hi");
+	res.sendFile('index.ejs');
 });
 
-module.exports = {
-  router: router
-};
+module.exports = router;

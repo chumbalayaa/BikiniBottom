@@ -11,11 +11,11 @@ var logger = require("morgan");
 var fs = require("fs");
 
 //routing variables
-var index = require('./routes/index').router;
+var index = require('./routes/index');
 
 //Add variables to app
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', __dirname + '/views');
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -50,7 +50,7 @@ app.use(function(req,res,next) {
 });
 
 //Routing
-app.use('/', index);
+app.use("/", index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -82,7 +82,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 process.env.NODE_ENV = 'development';
-app.listen(port || 3000, ip);
+app.listen(port || 8080, ip);
 console.log("We are in "+process.env.NODE_ENV);
 
 /*app.listen(process.env.OPENSHIFT_NODEJS_PORT || 8080,
