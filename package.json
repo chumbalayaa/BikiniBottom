@@ -16,7 +16,7 @@
   "homepage": "http://www.openshift.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/openshift/origin-server"
+    "url": "https://github.com/chums923/BikiniBottom"
   },
 
   "engines": {
@@ -25,7 +25,23 @@
   },
 
   "dependencies": {
-    "express": "~3.4.4"
+    "express": ">= 4.0.0",
+    "jade": "*",
+    "consolidate": "*",
+    "body-parser": "^1.5.2",
+    "errorhandler": "^1.1.1",
+    "cookie-parser": "^1.0.1",
+    "express-session" : "~1.0.2",
+    "errorhandler": "*",
+    "serve-favicon": "*",
+    "morgan": "~1.0.0",
+    "debug": "~0.7.4",
+    "mongodb": "*",
+    "password-hash": "*",
+    "mongoose": "*",
+    "async": "*",
+    "connect-busboy" : "*",
+    "node-schedule" : "*"
   },
   "devDependencies": {},
   "bundleDependencies": [],
