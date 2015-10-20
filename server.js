@@ -11,7 +11,7 @@ var logger = require("morgan");
 var fs = require("fs");
 
 //routing variables
-
+var index = require('./routes/index');
 
 //Add variables to app
 //app.set('view engine', 'jade');
@@ -51,7 +51,7 @@ app.use(function(req,res,next) {
 });
 
 //Routing
-
+app.use('/', index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
