@@ -20,7 +20,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(busboy());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Session code
