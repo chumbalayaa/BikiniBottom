@@ -1,0 +1,13 @@
+.main-background{
+	background-image: url("images/bikinibottom.png") no-repeat center center fixed;
+    width: 110%;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+}
+
+.top-bar{
+	color: red;
+}
